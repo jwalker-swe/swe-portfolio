@@ -101,7 +101,7 @@ const prism: ProjectInfo = {
 	],
 	description: "A tool for managing and interfacing with media present on a local server.",
 	gitHubLink: 'https://github.com/jwalker-swe/prism-media-player',
-	liveLInk: null
+	liveLink: null
 }
 
 const whiskyTree: JobInfo = {
