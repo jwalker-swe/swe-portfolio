@@ -17,7 +17,9 @@ export default function NavBar() {
 						</a>
 					</li>
 					<li className={`navbar-list-item`}>
-						Resume
+						<a href='/assets/documents/jwalker_resume.pdf' target='_blank'>
+							Resume
+						</a>
 					</li>
 				</ul>
 			</nav>
