@@ -6,17 +6,17 @@ export default function NavBar() {
 					Jordan Walker
 				</span>
 				<ul className={`text-primary text-md font-semibold flex justify-evenly items-center gap-5`}>
-					<li className={`navbar-list-item`}>
+					<li className={`navbar-list-item hover:text-crate`}>
 						<a href='/'>
 							Home
 						</a>
 					</li>
-					<li className={`navbar-list-item`}>
+					<li className={`navbar-list-item hover:text-crate`}>
 						<a href='#projects'>
 							Projects
 						</a>
 					</li>
-					<li className={`navbar-list-item`}>
+					<li className={`navbar-list-item hover:text-crate`}>
 						<a href='/assets/documents/jwalker_resume.pdf' target='_blank'>
 							Resume
 						</a>
