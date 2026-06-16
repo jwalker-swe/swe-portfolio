@@ -12,12 +12,20 @@ import { useState, useEffect } from 'react';
 const typeScriptIconPath = "/assets/images/icons/typescriptlang-icon.svg";
 const javaScriptIconPath = "/assets/images/icons/javascript-icon.svg";
 const pythonIconPath = "/assets/images/icons/python-icon.svg";
-const sqlIconPath = "/assets/images/icons/sql-icon.svg";
+const sqlIconPath = "/assets/images/icons/sqlite-icon.svg";
 const nextIconPath = "/assets/images/icons/nextjs-icon.svg";
 const reactIconPath = "/assets/images/icons/reactjs-icon.svg";
 const gitIconPath = "/assets/images/icons/git-scm-icon.svg";
 const supabaseIconPath = "/assets/images/icons/supabase-icon.svg";
 const tailwindIconPath = "/assets/images/icons/tailwindcss-icon.svg";
+const htmlIconPath = "/assets/images/icons/html5-icon.svg";
+const cssIconPath = "/assets/images/icons/css-icon.svg";
+const postmanIconPath = "/assets/images/icons/postman-icon.svg";
+const nodejsIconPath = "/assets/images/icons/nodejs-icon.svg";
+const pandasIconPath = "/assets/images/icons/pandas-icon.svg";
+const postgresIconPath = "/assets/images/icons/postgresql-icon.svg";
+const fastapiIconPath = "/assets/images/icons/fastapi-icon.svg";
+const dockerIconPath = "/assets/images/icons/docker-icon.svg";
 
 // Set paths to project background images
 const crateBackgroundImg = "/assets/images/projects/crate-001.png";
@@ -229,13 +237,29 @@ export default function Home() {
 					<h3 className={`text-primary text-2xl mt-8 mb-2 font-bold`}>
 						Technologies
 					</h3>
-					<div className={`w-full flex justify-between items-center gap-8`}>
-						<ListedTechnology iconPath={typeScriptIconPath} techName={"TypeScript"} />
-						<ListedTechnology iconPath={javaScriptIconPath} techName={"JavaScript"} />
-						<ListedTechnology iconPath={pythonIconPath} techName={"Python"} />
-						<ListedTechnology iconPath={nextIconPath} techName={"Next.js"} />
-						<ListedTechnology iconPath={gitIconPath} techName={"Git"} />
-						<ListedTechnology iconPath={sqlIconPath} techName={"SQL"} />
+					<div className={`w-full h-fit flex flex-col justify-start items-start gap-4`}>
+						<div className={`w-full flex justify-start items-center gap-8`}>
+							<ListedTechnology iconPath={typeScriptIconPath} techName={"TypeScript"} />
+							<ListedTechnology iconPath={javaScriptIconPath} techName={"JavaScript"} />
+							<ListedTechnology iconPath={pythonIconPath} techName={"Python"} />
+							<ListedTechnology iconPath={htmlIconPath} techName={"HTML"} />
+							<ListedTechnology iconPath={cssIconPath} techName={"CSS"} />
+							<ListedTechnology iconPath={reactIconPath} techName={"React"} />
+							<ListedTechnology iconPath={nextIconPath} techName={"Next.js"} />
+						</div>
+						<div className={`w-full flex justify-start items-center gap-8`}>
+							<ListedTechnology iconPath={fastapiIconPath} techName={"FastAPI"} />
+							<ListedTechnology iconPath={nodejsIconPath} techName={"Node.js"} />
+							<ListedTechnology iconPath={pandasIconPath} techName={"Pandas"} />
+							<ListedTechnology iconPath={tailwindIconPath} techName={"Tailwind CSS"} />
+							<ListedTechnology iconPath={gitIconPath} techName={"Git"} />
+							<ListedTechnology iconPath={sqlIconPath} techName={"SQLite"} />
+						</div>
+						<div className={`w-full flex justify-start items-center gap-8`}>
+							<ListedTechnology iconPath={postgresIconPath} techName={"PostgreSQL"} />
+							<ListedTechnology iconPath={dockerIconPath} techName={"Docker"} />
+							<ListedTechnology iconPath={postmanIconPath} techName={"Postman"} />
+						</div>
 					</div>
 				</section>
 				<section id={'projects'} className={`projects w-full h-fit`}>
