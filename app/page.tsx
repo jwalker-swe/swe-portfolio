@@ -30,6 +30,7 @@ const dockerIconPath = "/assets/images/icons/docker-icon.svg";
 // Set paths to project background images
 const crateBackgroundImg = "/assets/images/projects/crate-001.png";
 const prismBackgroundImg = "/assets/images/projects/prism-001.png";
+const entryBackgroundImg = "/assets/images/projects/entry-001.png";
 const locationBannerImg = "/assets/images/banners/location-banner-001.png";
 
 type ProjectInfo = {
@@ -73,8 +74,8 @@ const crate: ProjectInfo = {
 			iconPath: nextIconPath
 		},
 		{
-			techName: 'Supabase',
-			iconPath: supabaseIconPath
+			techName: 'PostgreSQL',
+			iconPath: postgresIconPath
 		},
 		{
 			techName: 'Tailwind CSS',
@@ -109,6 +110,44 @@ const prism: ProjectInfo = {
 	],
 	description: "A tool for managing and interfacing with media present on a local server.",
 	gitHubLink: 'https://github.com/jwalker-swe/prism-media-player',
+	liveLink: null
+}
+
+const entry: ProjectInfo = {
+	projectName: "Entry",
+	backgroundImg: entryBackgroundImg,
+	technology: [
+		{
+			techName: 'Python',
+			iconPath: pythonIconPath
+		},
+		{
+			techName: 'TypeScript',
+			iconPath: typeScriptIconPath
+		},
+		{
+			techName: 'React',
+			iconPath: reactIconPath
+		},
+		{
+			techName: 'SQLite3',
+			iconPath: sqlIconPath
+		},
+		{
+			techName: 'FastAPI',
+			iconPath: fastapiIconPath
+		},
+		{
+			techName: 'Pandas',
+			iconPath: pandasIconPath
+		},
+		{
+			techName: 'Tailwind CSS',
+			iconPath: tailwindIconPath
+		}
+	],
+	description: "A personal CS2 statistics tracker that parses match demo files to extract and visualise performance data.",
+	gitHubLink: 'https://github.com/jwalker-swe/entry',
 	liveLink: null
 }
 
@@ -268,6 +307,7 @@ export default function Home() {
 					</h3>
 					<div className={`w-full flex flex-col items-center justify-start gap-4`}>
 						<Project project={crate}/>
+						<Project project={entry}/>
 						<Project project={prism}/>
 					</div>
 				</section>

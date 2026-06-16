@@ -25,8 +25,8 @@ export default function Project({project}: {project: ProjectInfo}) {
 						<h4 className={`w-fit h-fit text-primary text-lg font-bold`}>
 							{project.projectName} 
 						</h4>
-						{project.liveLink ? <a href={project.liveLink} target="_blank" className={`w-fit h-fit text-primary hover:text-crate`}><span className={`text-sm`}>Visit</span></a> : <div></div>}
-						{project.gitHubLink ? <a href={project.gitHubLink} target="_blank" className={`w-fit h-fit text-primary hover:text-crate`}><span className={`text-sm`}>GitHub</span></a> : <div></div>} 
+						{project.liveLink ? <a href={project.liveLink} target="_blank" className={`w-fit h-fit text-primary hover:text-crate underline`}><span className={`text-sm`}>Visit</span></a> : <div></div>}
+						{project.gitHubLink ? <a href={project.gitHubLink} target="_blank" className={`w-fit h-fit text-primary hover:text-crate underline`}><span className={`text-sm`}>GitHub</span></a> : <div></div>} 
 					</div>
 					<div className={`flex justify-start items-center gap-4`}>
 						{project.technology.map((tech) => (
